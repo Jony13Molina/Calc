@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numResultView"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/number"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/resutlViewText"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/buttonOne"
+                android:onClick="operationFunction"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_one"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                android:fontFamily="sans-serif-black"
+                app:layout_constraintVertical_bias="0.514" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/buttonTwo"
+                android:onClick="operationFunction"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_two"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:id="@+id/buttonThree"
+                android:onClick="operationFunction"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_three"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:id="@+id/buttonDivide"
+                android:onClick="operationFunction"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_four"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/buttonFour"
+                android:onClick="operationFunction"
+                android:text="@string/button_five"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                android:fontFamily="sans-serif-black"
+                app:layout_constraintVertical_bias="0.514" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/buttonFive"
+                android:onClick="operationFunction"
+                android:text="@string/button_six"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:id="@+id/buttonSix"
+                android:onClick="operationFunction"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_seven"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/buttonMinus"
+                android:onClick="operationFunction"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_eight"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:id="@+id/buttonSeven"
+                android:onClick="operationFunction"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_nine"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                android:fontFamily="sans-serif-black"
+                app:layout_constraintVertical_bias="0.514" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/buttonEight"
+                android:onClick="operationFunction"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_ten"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/buttonNine"
+                android:onClick="operationFunction"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_eleven"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/buttonPlus"
+                android:onClick="operationFunction"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_twelve"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:id="@+id/buttonClear"
+                android:onClick="operationFunction"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_thirteen"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                android:fontFamily="sans-serif-black"
+                app:layout_constraintVertical_bias="0.514" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+                android:id="@+id/buttonZero"
+                android:onClick="operationFunction"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_fourteen"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonDecimal"
+                android:onClick="operationFunction"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_fifteen"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonEquals"
+                android:onClick="operationFunction"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_sixteen"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fireLogin"
+                app:layout_constraintVertical_bias="0.514" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calc</string>
+    <string name="number">Calculate</string>
+    <string name="button_one">1</string>
+    <string name="button_two">2</string>
+    <string name="button_three">3</string>
+    <string name="button_four">/</string>
+    <string name="button_five">4</string>
+    <string name="button_six">5</string>
+    <string name="button_seven">6</string>
+    <string name="button_eight">-</string>
+    <string name="button_nine">7</string>
+    <string name="button_ten">8</string>
+    <string name="button_eleven">9</string>
+    <string name="button_twelve">+</string>
+    <string name="button_thirteen">C</string>
+    <string name="button_fourteen">0</string>
+    <string name="button_fifteen">.</string>
+    <string name="button_sixteen">=</string>
+</resources>
